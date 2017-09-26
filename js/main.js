@@ -45,6 +45,12 @@ $(document).ready(function(){
         .typeString('Blogger')
         .pauseFor(2500)
         .deleteAll()
+        .typeString('TechOps Engineer')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('Security and Cloud Engineer')
+        .pauseFor(2500)
+        .deleteAll()
         .typeString('Graphic Designer')
         .pauseFor(2500)
         .start();

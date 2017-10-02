@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
     typewriter.typeString('Software Developer')
         .pauseFor(2500)
-        .deleteChars(10)
+        .deleteAll()
         .typeString('Web developer')
         .pauseFor(2500)
         .deleteAll()

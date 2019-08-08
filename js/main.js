@@ -31,10 +31,10 @@ $(document).ready(function(){
     var typewriter = new Typewriter(app, {
         loop: true
     });
-    typewriter.typeString('Software Developer')
+    typewriter.typeString('Freelancer')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Web developer')
+        .typeString('Security Consultant')
         .pauseFor(2500)
         .deleteAll()
         .typeString('TechOps Enthusiast')
@@ -43,7 +43,7 @@ $(document).ready(function(){
         .typeString('Security and Cloud Enthusiast')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Programmer')
+        .typeString('Developer')
         .pauseFor(2500)
         .deleteAll()
         .typeString('Tech Geek')
@@ -52,7 +52,7 @@ $(document).ready(function(){
         .typeString('Blogger')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Graphic Designer')
+        .typeString('Engineer')
         .pauseFor(2500)
         .start();
 

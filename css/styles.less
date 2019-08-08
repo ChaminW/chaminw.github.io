@@ -48,6 +48,16 @@ body {
   .bg-cover;
 }
 
+#particles-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
 /* ==========================================================
 ! 03. Buttons
 ========================================================== */ 
@@ -387,7 +397,7 @@ iframe {
 //VcardBody - Variables
 @mt-laptop: 40px;
 @mt-full-hd: 180px;
-@ml-pageActive:  55%;
+@ml-pageActive:  60%;
 
 .section-vcardbody {  
   width: 99%;
@@ -409,7 +419,7 @@ iframe {
     margin-top: @mt-laptop;
     left: 30%;
     height: 570px;
-    width: 50%;
+    width: 45%;
     padding: 45px;
     padding-bottom: 20px;
   }
@@ -778,7 +788,7 @@ iframe {
 }
 
 .testimonial-content {
-  background: url('../img/bgmask2.png') no-repeat center center @color1;
+  background: no-repeat center center @color1;
   color: @negative-color;
   padding: 20px;
   .border-radius(10px);
@@ -827,40 +837,10 @@ iframe {
   font-weight: lighter;
 }
 
-.owl-carousel {
-  cursor: -webkit-grab; cursor: -moz-grab;
-  &:focus {
-    cursor: -webkit-grab; cursor: -moz-grab;
-  }
-  &:active {
-   cursor: -webkit-grab; cursor: -moz-grab;
-  }
-  &:hover {
-    cursor: -webkit-grab; cursor: -moz-grab;
-  }
-}
-
 /*============================================================================
   >>  11. Owl Carousel
   ============================================================================
 */
-
-.owl-carousel .owl-item  {
-  cursor: -webkit-grab; cursor: -webkit-grab;
-  &:focus {
-    cursor: -webkit-grabbing; cursor: -moz-grabbing;
-  }
-  &:active {
-   cursor: -webkit-grabbing; cursor: -moz-grabbing;
-  }
-  img {
-    width: 100%;
-  }
-}
-
-.grabbing { 
-    cursor: -webkit-grabbing!important; cursor: -moz-grabbing!important;
-}
 
 .owl-controls-wrapper2 {
   &:hover {
@@ -1023,7 +1003,6 @@ iframe {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px); 
   a {
-    cursor: url('../img/projects2.cur'), projetos!important;   
     .border-radius(6px);
   }
 }
@@ -1154,7 +1133,6 @@ span.see-more {
 
 .blog-item-thumb {
   a {
-    cursor: url('../img/projects.cur'), projetos!important;
     -moz-cursor: url('../img/projects.cur'), projetos!important;
   }
   img {
@@ -1344,7 +1322,6 @@ span.see-more {
   left: 0;
   width: 100%;
   height: 100%;
-   cursor: url('../img/projects.cur'), projetos!important;
 }
 
 

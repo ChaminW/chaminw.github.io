@@ -77,6 +77,15 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#particles-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
 /* ==========================================================
 ! 03. Buttons
 ========================================================== */
@@ -424,7 +433,7 @@ iframe {
     margin-top: 40px;
     left: 30%;
     height: 570px;
-    width: 50%;
+    width: 45%;
     padding: 45px;
     padding-bottom: 20px;
   }
@@ -439,7 +448,7 @@ iframe {
 }
 @media (min-width:992px) {
   .section-page-single {
-    left: 55%;
+    left: 60%;
     transform: translateY(-200px);
     -moz-transform: translateY(-200px);
     -webkit-transform: translateY(-200px);
@@ -478,7 +487,7 @@ iframe {
 .section-page-active {
   opacity: 1;
   z-index: 22;
-  left: 65%;
+  left: 60%;
   visibility: visible;
   transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -786,7 +795,7 @@ iframe {
   font-weight: bold;
 }
 .testimonial-content {
-  background: url('../img/bgmask2.png') no-repeat center center #08aeac;
+  background: no-repeat center center #08aeac;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -835,44 +844,10 @@ iframe {
   font-style: italic;
   font-weight: lighter;
 }
-.owl-carousel {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-}
-.owl-carousel:focus {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-}
-.owl-carousel:active {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-}
-.owl-carousel:hover {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-}
 /*============================================================================
   >>  11. Owl Carousel
   ============================================================================
 */
-.owl-carousel .owl-item {
-  cursor: -webkit-grab;
-}
-.owl-carousel .owl-item:focus {
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-}
-.owl-carousel .owl-item:active {
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-}
-.owl-carousel .owl-item img {
-  width: 100%;
-}
-.grabbing {
-  cursor: -webkit-grabbing !important;
-  cursor: -moz-grabbing !important;
-}
 .owl-controls-wrapper2:hover .owl-controls {
   opacity: 1;
 }
@@ -1021,7 +996,6 @@ iframe {
   -moz-transform: translateY(0px);
 }
 .project-item a {
-  cursor: url('../img/projects2.cur'), projetos !important;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1149,7 +1123,6 @@ span.see-more {
   text-decoration: none;
 }
 .blog-item-thumb a {
-  cursor: url('../img/projects.cur'), projetos !important;
   -moz-cursor: url('../img/projects.cur'), projetos !important;
 }
 .blog-item-thumb img {
@@ -1328,7 +1301,6 @@ span.see-more {
   left: 0;
   width: 100%;
   height: 100%;
-  cursor: url('../img/projects.cur'), projetos !important;
 }
 /* ==========================================================
 ! 17. SECTION: Contact

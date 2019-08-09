@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
     //==============___Particle js___================
-    particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
+    particlesJS.load('particles-container', 'assets/particlesjs-config.json', function () {
         console.log('callback - particles.js config loaded');
     });
 

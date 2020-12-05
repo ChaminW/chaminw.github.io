@@ -10,7 +10,7 @@ $(window).load(function(){
 
 
 
-    $('#page-loader').delay(300).fadeOut(400, function(){
+    $('#page-loader').delay(10).fadeOut(400, function(){
   });
 
   $('#loader-name').addClass('loader-left');
@@ -31,7 +31,7 @@ $(document).ready(function(){
     var typewriter = new Typewriter(app, {
         loop: true
     });
-    typewriter.typeString('Freelancer')
+    typewriter .typeString('Entrepreneur')
         .pauseFor(2500)
         .deleteAll()
         .typeString('Security Consultant')
@@ -49,10 +49,13 @@ $(document).ready(function(){
         .typeString('Tech Geek')
         .pauseFor(2500)
         .deleteAll()
+        .typeString('Freelancer')
+        .pauseFor(2500)
+        .deleteAll()
         .typeString('Blogger')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Engineer')
+        .typeString('Lead Engineer')
         .pauseFor(2500)
         .start();
 
@@ -64,12 +67,12 @@ $(document).ready(function(){
  $("#testimonial-carousel").owlCarousel({
     navigation : false, // Show next and prev buttons
     slideSpeed : 300,
-    paginationSpeed : 400,      
+    paginationSpeed : 400,
     responsiveRefreshRate : 200,
     responsiveBaseWidth: window,
     pagination: true,
-    singleItem: true,    
-    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],     
+    singleItem: true,
+    navigationText: ["<span class='fa fa-chevron-left'></span>","<span class='fa fa-chevron-right'></span>"],
   });
 
 
@@ -99,10 +102,10 @@ var linkPage = '';
 
 function pageOn(){
     $('#main-menu').addClass('main-menu-pgactive');
-    $('#section-home').addClass('section-vcardbody-pgactive');    
-    $('.profileActive').removeClass('profileActive');    
+    $('#section-home').addClass('section-vcardbody-pgactive');
+    $('.profileActive').removeClass('profileActive');
     $('#profile2').addClass('profileActive');
-    
+
     linkHome = 1;
 }
 
@@ -118,7 +121,7 @@ function pageOff(){
 
 $(".link-page").on('click', function(event){
   event.preventDefault();
-  $('.menuActive').removeClass('menuActive');  
+  $('.menuActive').removeClass('menuActive');
   $(this).addClass('menuActive');
   linkPage = $(this).attr('href');
   $('.section-page-active').removeClass('section-page-active');
@@ -137,7 +140,7 @@ $(".link-home").on('click', function(event){
     $('.menuActive').removeClass('menuActive');
     $(this).addClass('menuActive');
     pageOff();
-  }  
+  }
 });
 
 //==============___Blog - Ajax___================
@@ -186,8 +189,8 @@ $(".loadPost").on('click', function(event){
               .blur()
               .closest(".control-group")
               .removeClass("success")
-              .removeClass("error");              
-            
+              .removeClass("error");
+
           } else {
             $("#contactError").fadeIn(300);
             $("#contactSuccess").addClass("hidden");
@@ -202,7 +205,7 @@ $(".loadPost").on('click', function(event){
 //Modal for Contact Form
 $('.modal-wrap').click(function(){
   $('.modal-wrap').fadeOut(300);
-});   
+});
 
 //End - Document Ready
 });
